@@ -5,9 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas | Curso Practico de JavaScript en Platzi</title>
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./movil.css">
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <header>
+        <h1>Bienvenido a RandoMath.</h1>
+        <p>Calculos operaciones matemàticas por ti</p>
+    </header>
+
+    <main>
+        <h2 class="main-titulo">Perìmetros y Àreas de Figuras Geometricas</h2>
+        <section>
+            <article class="main-section-article-left">
+                <p>Cuadrados <span>+</span></p>
+                <form action="" class="article-left--form">
+                    <label for="inputCuadrado">
+                        Escribe cuando mide el lado de tu cuadrado:
+                    </label>
+                    <input type="number" id="inputCuadrado">
+                    <label for="selectCuadrado">
+                        Sistema de mediciòn:
+                    </label>
+                    <select name="" id="selectCuadrado">
+                        <option value="1">cm</option>
+                        <option value="2">m</option>
+                        <option value="3">km</option>
+                    </select>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el Perìmetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular el Àrea
+                    </button>
+                    <h2 id="resultadoCuadrado">Resultado</h2>
+                </form>
+            </article>
+            <article class="main-section-article-middle">
+                <p>Triàngulos <span>+</span></p>
+                <form action="" class="article-middle--form">
+                    <label for="inputTriangulo-lado1">
+                        Escribe cuanto mide el lado 1 del triàngulo:
+                    </label>
+                    <input type="number" id="inputTriangulo-lado1">
+                    <label for="inputTriangulo-lado2">
+                        Escribe cuanto mide el lado 2 del triàngulo:
+                    </label>
+                    <input type="number" id="inputTriangulo-lado2">
+                    <label for="inputTriangulo-base">
+                        Escribe cuanto mide la base del triàngulo:
+                    </label>
+                    <input type="number" id="inputTriangulo-base">
+                    <label for="inputTriangulo-altura">
+                        Escribe cuanto mide la altura del triàngulo:
+                    </label>
+                    <input type="number" id="inputTriangulo-altura">
+                    <label for="selectTriangulo">
+                        Sistema de mediciòn:
+                    </label>
+                    <select name="" id="selectTriangulo">
+                        <option value="1">cm</option>
+                        <option value="2">m</option>
+                        <option value="3">km</option>
+                    </select>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el Perìmetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el Àrea
+                    </button>
+                    <h2 id="resultadoTriangulo">Resultado</h2>
+                </form>
+            </article>
+            <article class="main-section-article-right">
+                <p>Circulos <span>+</span></p>
+                <form action="" class="article-right--form">
+                    <label for="inputCirculo">
+                        Escribe cuanto mide el radio del circulo:
+                    </label>
+                    <input type="number" id="inputCirculo">
+                    <label for="selectCirculo">
+                        Sistema de mediciòn:
+                    </label>
+                    <select name="" id="selectCirculo">
+                        <option value="1">cm</option>
+                        <option value="2">m</option>
+                        <option value="3">km</option>
+                    </select>
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular el Perìmetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular el Àrea
+                    </button>
+                    <h2 id="resultadoCirculo">Resultado</h2>
+                </form>
+            </article>
+        </section>
+    </main>
+
     <script src="./figuras.js"></script>
 </body>
 </html>
