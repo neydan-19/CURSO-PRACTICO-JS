@@ -7,21 +7,25 @@
     <title>Figuras Geometricas | Curso Practico de JavaScript en Platzi</title>
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="./movil.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Comfortaa:wght@300;400&family=Titan+One&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenido a RandoMath.</h1>
-        <p>Calculos operaciones matemàticas por ti</p>
+        <p>Calculamos operaciones matemàticas por ti</p>
     </header>
 
     <main>
         <h2 class="main-titulo">Perìmetros y Àreas de Figuras Geometricas</h2>
         <section>
-            <article class="main-section-article-left">
-                <p>Cuadrados <span>+</span></p>
-                <form action="" class="article-left--form">
+            <article class="main-section-article-left article">
+                <div class="container-left">
+                    <p>Cuadrados <span class="cuadrado-svg"></span></p>
+                    <form action="" class="article-left--form form">
                     <label for="inputCuadrado">
-                        Escribe cuando mide el lado de tu cuadrado:
+                        Cuando mide el lado de tu cuadrado:
                     </label>
                     <input type="number" id="inputCuadrado">
                     <label for="selectCuadrado">
@@ -38,26 +42,28 @@
                     <button type="button" onclick="calcularAreaCuadrado()">
                         Calcular el Àrea
                     </button>
-                    <h2 id="resultadoCuadrado">Resultado</h2>
-                </form>
+                    <h2 id="resultadoCuadrado" class="respuesta">Resultado</h2>
+                    </form>
+                </div>
             </article>
-            <article class="main-section-article-middle">
-                <p>Triàngulos <span>+</span></p>
-                <form action="" class="article-middle--form">
+            <article class="main-section-article-middle article">
+                <div class="container-middle">
+                    <p>Triàngulos <span class="triangulo-svg"></span></p>
+                    <form action="" class="article-middle--form form">
                     <label for="inputTriangulo-lado1">
-                        Escribe cuanto mide el lado 1 del triàngulo:
+                        Cuanto mide el lado 1 del triàngulo:
                     </label>
                     <input type="number" id="inputTriangulo-lado1">
                     <label for="inputTriangulo-lado2">
-                        Escribe cuanto mide el lado 2 del triàngulo:
+                        Cuanto mide el lado 2 del triàngulo:
                     </label>
                     <input type="number" id="inputTriangulo-lado2">
                     <label for="inputTriangulo-base">
-                        Escribe cuanto mide la base del triàngulo:
+                        Cuanto mide la base del triàngulo:
                     </label>
                     <input type="number" id="inputTriangulo-base">
                     <label for="inputTriangulo-altura">
-                        Escribe cuanto mide la altura del triàngulo:
+                        Cuanto mide la altura del triàngulo:
                     </label>
                     <input type="number" id="inputTriangulo-altura">
                     <label for="selectTriangulo">
@@ -74,14 +80,16 @@
                     <button type="button" onclick="calcularAreaTriangulo()">
                         Calcular el Àrea
                     </button>
-                    <h2 id="resultadoTriangulo">Resultado</h2>
-                </form>
+                    <h2 id="resultadoTriangulo" class="respuesta">Resultado</h2>
+                    </form>
+                </div> 
             </article>
-            <article class="main-section-article-right">
-                <p>Circulos <span>+</span></p>
-                <form action="" class="article-right--form">
+            <article class="main-section-article-right article">
+                <div class="container-right">
+                    <p>Circulos <span class="circulo-svg"></span></p>
+                    <form action="" class="article-right--form form">
                     <label for="inputCirculo">
-                        Escribe cuanto mide el radio del circulo:
+                        Cuanto mide el radio del circulo:
                     </label>
                     <input type="number" id="inputCirculo">
                     <label for="selectCirculo">
@@ -98,8 +106,9 @@
                     <button type="button" onclick="calcularAreaCirculo()">
                         Calcular el Àrea
                     </button>
-                    <h2 id="resultadoCirculo">Resultado</h2>
-                </form>
+                    <h2 id="resultadoCirculo" class="respuesta">Resultado</h2>
+                    </form>
+                </div>
             </article>
         </section>
     </main>
