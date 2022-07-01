@@ -204,3 +204,77 @@ section .article div{
     position: relative;
     top: 2px;
 }
+
+/* MEDIA-QUERIES */
+
+@media (min-width: 520px){
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 1.8rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px){
+    header h1 {
+        font-size: 4.5rem;
+    }
+
+    header p {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    .article div p {
+        font-size: 2.25rem;
+    }
+
+    .form label {
+        font-size: 2rem;
+    }
+
+    .form input {
+        font-size: 2rem;
+    }
+
+    .form select {
+        font-size: 1.6rem;
+    }
+
+    .form button {
+        font-size: 1.6rem;
+    }
+
+    .form h2 {
+        font-size: 2rem;
+    }
+
+    section .article div {
+        max-width: 390.5px;
+    }
+
+    .form button {
+        position: relative;
+        top: -5px;
+    }
+}
+
+@media (min-width: 1100px){
+    section .article div {
+        max-width: 318.75px;
+    }
+
+    main section {
+        flex-wrap: nowrap;
+    }
+
+}
