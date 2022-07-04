@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    background: rgb(91,230,64);
-    background: radial-gradient(circle, rgba(91,230,64,1) 0%, rgba(219,141,27,1) 100%);
+    /* background: rgb(91,230,64);
+    background: radial-gradient(circle, rgba(91,230,64,1) 0%, rgba(219,141,27,1) 100%); */
+    background-color: grey;
 }
 
 /* HEADER INICIO */
