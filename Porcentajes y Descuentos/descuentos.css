@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(91,230,64);
+    background: radial-gradient(circle, rgba(91,230,64,1) 0%, rgba(219,141,27,1) 100%);
+}
+
+/* HEADER INICIO */
+
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: "Anton", cursive;
+    font-weight: 300;
+    color: white;
+    margin-top: 1rem;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #212121;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+}
+
+/* HEADER FINAL */
+
+/* MAIN INICIO */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+main section {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main section div {
+    width: 90%;
+    max-width: 300px;
+    min-width: 274px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    background-color: #BDBDBD;
+    border-radius: 15px;
+    padding: 10px 5px;
+    box-shadow: -12px 13px 18px 2px rgba(3,2,3,0.77);
+    -webkit-box-shadow: -12px 13px 18px 2px rgba(3,2,3,0.77);
+    -moz-box-shadow: -12px 13px 18px 2px rgba(3,2,3,0.77);
+}
+
+div h2 {
+    color: crimson;
+    font-size: 1.5rem;
+    font-family: "Comfortaa", cursive;
+    border-bottom: 1px solid crimson;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    flex-wrap: wrap;
+}
+
+form label {
+    color: #757575;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-family: "Comfortaa", cursive;
+}
+
+form input {
+    border: none;
+    background-color: #a8a7a7;
+    border-radius: 5px;
+    height: 1.7rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+}
+
+form button {
+    background-color: #a8a7a7;
+    padding: 0.5rem;
+    border-radius: 7px;
+    margin: 0.5rem 0;
+    font-family: "Cabin", sans-serif;
+}
+
+form p {
+    background-color: #a8a7a7;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 7px;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-family: "Cabin", sans-serif;
+}
+
+/* MAIN FINAL */
+
+/* DISEÑO RESPONSIVE */
+
+@media (min-width: 426px){
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 900px){
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 3rem;
+    }
+
+    main {
+        height: 400px;
+    }
+}
