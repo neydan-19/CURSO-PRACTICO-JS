@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <title>Calculadora de Intereses</title>
+    <link rel="stylesheet" href="./interes.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Comfortaa:wght@300;400&family=Titan+One&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Intereses</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-left container-hijo">
+                <h2>Ingresa los Datos</h2>
+                <form action="">
+                    <label for="Capital" id="labelCapital">
+                        Ingrese el Capital:
+                    </label>
+                    <input type="number" id="Capital">
+                    <label for="Tasa" id="labelTasa">
+                        Ingrese la Taza de Interes %:
+                    </label>
+                    <input type="number" id="Tasa">
+                    <label for="Periodo" id="labelPeriodo">
+                        Ingrese el Periodo:
+                    </label>
+                    <input type="number" id="Periodo">
+                    <label for="TipoDeTiempo" id="labelTipoDeTiempo">
+                        Tipo de tasa:
+                    </label>
+                        <select id="TipoDeTiempo">
+                            <option value="dias">dias</option>
+                            <option value="meses">meses</option>
+                            <option value="años">años</option>
+                        </select>
+                    <label for="TipoDeInteres" id="labelTipoDeInteres">
+                        Tipo de Interes:
+                    </label>
+                        <select id="TipoDeInteres">
+                            <option value="Simple">Simple</option>
+                            <option value="Compuesto">Compuesto</option>
+                        </select>
+                    <button type="button" onclick="ejecutarCalculo()">Calcular</button>          
+                </form>
+            </div>
+            <div class="container-right container-hijo">
+                <h3 id="h3simple">Interes Simple:</h3>
+                <p id="RespuestaInteresSimple"></p>
+                <h3 id="h3compuesto">Interes Compuesto:</h3>
+                <p id="RespuestaInteresCompuesto"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./interes.js"></script>
+</body>
+</html>
